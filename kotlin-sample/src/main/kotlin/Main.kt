@@ -1,42 +1,41 @@
-import patterns.creational.abstractFactory.IntProperty
-import patterns.creational.builder.Mail
-import patterns.creational.sigleton.SingletonHttpClient
-import patterns.creational.staticFactoryMethod.Server
-import patterns.structural.decorator.DefaultStarTrekRepository
-import patterns.structural.decorator.LoggingGetCaptain
-import patterns.structural.decorator.ValidatingAdd
-import patterns.structural.adapter.cellPhone
-import patterns.structural.adapter.charger
-import patterns.structural.adapter.usPowerOutlet
-import patterns.structural.adapter.toEUPlug
-import patterns.structural.adapter.toUsbTypeC
-import patterns.structural.bridge.StormTrooper
-import patterns.structural.bridge.Rifle
-import patterns.structural.bridge.RegularLegs
-import patterns.structural.bridge.Flamethrower
-import patterns.structural.bridge.AthleticLegs
-import patterns.structural.composite.Squad
-import patterns.structural.facade.startFromConfiguration
-import patterns.behavioral.strategy.OurHero
-import patterns.behavioral.strategy.Weapons
-import patterns.behavioral.state.Snail
+import patterns.behavioral.chainofresponsibility.Request
 import patterns.behavioral.command.TrooperOrders
 import patterns.behavioral.command.moveGenerator
-import patterns.behavioral.chainofresponsibility.Request
 import patterns.behavioral.interpreter.select
+import patterns.behavioral.mediator.Manager
 import patterns.behavioral.mediator.Michael
 import patterns.behavioral.mediator.MyCompany
-import patterns.behavioral.mediator.Manager
-import patterns.behavioral.visitor.collectLinks
-import patterns.behavioral.visitor.Page
+import patterns.behavioral.observer.Bat
+import patterns.behavioral.observer.Cat
+import patterns.behavioral.observer.Dog
+import patterns.behavioral.observer.Turkey
+import patterns.behavioral.state.Snail
+import patterns.behavioral.strategy.OurHero
+import patterns.behavioral.strategy.Weapons
 import patterns.behavioral.visitor.Container
 import patterns.behavioral.visitor.Image
 import patterns.behavioral.visitor.Link
+import patterns.behavioral.visitor.Page
 import patterns.behavioral.visitor.Table
-import patterns.behavioral.observer.Cat
-import patterns.behavioral.observer.Dog
-import patterns.behavioral.observer.Bat
-import patterns.behavioral.observer.Turkey
+import patterns.behavioral.visitor.collectLinks
+import patterns.creational.abstractFactory.IntProperty
+import patterns.creational.builder.Mail
+import patterns.creational.staticFactoryMethod.Server
+import patterns.structural.adapter.cellPhone
+import patterns.structural.adapter.charger
+import patterns.structural.adapter.toEUPlug
+import patterns.structural.adapter.toUsbTypeC
+import patterns.structural.adapter.usPowerOutlet
+import patterns.structural.bridge.AthleticLegs
+import patterns.structural.bridge.Flamethrower
+import patterns.structural.bridge.RegularLegs
+import patterns.structural.bridge.Rifle
+import patterns.structural.bridge.StormTrooper
+import patterns.structural.composite.Squad
+import patterns.structural.decorator.DefaultStarTrekRepository
+import patterns.structural.decorator.LoggingGetCaptain
+import patterns.structural.decorator.ValidatingAdd
+import patterns.structural.facade.startFromConfiguration
 import kotlin.concurrent.thread
 
 class App {
@@ -59,16 +58,15 @@ fun testDataClass() {
 }
 
 fun main() {
-    raceConditionTest()
-}
-
-fun singletonPattern() {
-    println("Calling Singleton HTTP client")
-    println("1st call: instance: ${SingletonHttpClient}")
-    println("2nd call: instance: ${SingletonHttpClient}")
-    println("Is the same instance? ${SingletonHttpClient == SingletonHttpClient}")
-    println("********************************")
-    println("Response: ${SingletonHttpClient.response}")
+    println("Hello World!")
+    testDataClass()
+    factoryMethodPattern()
+    staticFactoryMethodPattern()
+    abstractFactoryPatternServer()
+    abstractFactoryPatternProperty()
+    builderPattern()
+    decoratorPattern()
+    adapterPattern()
 }
 
 fun factoryMethodPattern() {

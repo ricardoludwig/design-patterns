@@ -1,6 +1,9 @@
 run:install-no-test
 	java -jar target/*.jar
 
+just-run:
+	java -jar target/*.jar
+
 package:
 	mvn clean package -Dusertimezone=UTC
 

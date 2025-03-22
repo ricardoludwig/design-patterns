@@ -1,4 +1,4 @@
-package pattern.singleton;
+package patterns.creational.singleton;
 
 public class SingletonMain {
     public static void main(String[] args) {
@@ -8,9 +8,9 @@ public class SingletonMain {
     }
 
     public static void runSingletonSync() {
-        SingletonSyncronized singleton = SingletonSyncronized.getInstance("First instance!");
+        SingletonSynchronized singleton = SingletonSynchronized.getInstance("First instance!");
         System.out.println(STR."Show data: \{singleton.getData()}");
-        SingletonSyncronized anotherReference = SingletonSyncronized.getInstance("Second instance?");
+        SingletonSynchronized anotherReference = SingletonSynchronized.getInstance("Second instance?");
         System.out.println(STR."Show data from another reference: \{anotherReference.getData()}");
         System.out.println(STR."Is it the same instance? \{singleton == anotherReference}");
     }

@@ -1,4 +1,4 @@
-package pattern.singleton;
+package patterns.creational.singleton;
 
 public class SingletonNaive {
 

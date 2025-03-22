@@ -1,7 +1,6 @@
-package pattern;
+package patterns;
 
-import pattern.singleton.SingletonHolder;
-import pattern.singleton.SingletonSyncronized;
+import patterns.creational.singleton.SingletonHolder;
 
 public class App {
     public static void main(String[] args) {
@@ -10,9 +9,9 @@ public class App {
     }
 
     public static void runSingletonSync() {
-        SingletonSyncronized singleton = SingletonSyncronized.getInstance("First instance!");
+        patterns.creational.singleton.SingletonSynchronized singleton = patterns.creational.singleton.SingletonSynchronized.getInstance("First instance!");
         System.out.println(STR."Show data: \{singleton.getData()}");
-        SingletonSyncronized anotherReference = SingletonSyncronized.getInstance("Second instance?");
+        patterns.creational.singleton.SingletonSynchronized anotherReference = patterns.creational.singleton.SingletonSynchronized.getInstance("Second instance?");
         System.out.println(STR."Show data from another reference: \{anotherReference.getData()}");
         System.out.println(STR."Is it the same instance? \{singleton == anotherReference}");
     }

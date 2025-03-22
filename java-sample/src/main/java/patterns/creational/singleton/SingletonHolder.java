@@ -1,4 +1,4 @@
-package pattern.singleton;
+package patterns.creational.singleton;
 
 public final class SingletonHolder {
     private final String _data;
