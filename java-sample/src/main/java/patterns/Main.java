@@ -2,10 +2,11 @@ package patterns;
 
 import patterns.creational.singleton.SingletonHolder;
 
-public class App {
+public class Main{
     public static void main(String[] args) {
-        runSingletonSync();
-        //runSingletonHolder();
+        //runSingletonSync();
+        runSingletonHolder();
+
     }
 
     public static void runSingletonSync() {
