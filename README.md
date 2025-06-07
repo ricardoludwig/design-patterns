@@ -1,4 +1,4 @@
-#  "Padrões de Projetos (Design Patterns)"
+#  Padrões de Projetos (Design Patterns)
 
 *Design Patterns* são soluções comprovadas para problemas recorrentes. No
 mundo do desenvolvimento de software temos os padrões de projetos apresentados
